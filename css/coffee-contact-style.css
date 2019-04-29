@@ -1,0 +1,275 @@
+/* 載入字型 */
+
+@import url('https://fonts.googleapis.com/css?family=Muli:300i,400,400i,600,600i,700,700i,800,800i,900,900i|Noto+Sans+TC:400,500,700,900|Noto+Serif+SC:300,400,500,600,700,900|Noto+Serif+TC:300,400,500,600,700,900|Open+Sans:300i,400,400i,600,600i,700,700i,800,800i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i');
+body {
+    font-family: 'Noto Serif TC', serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Noto Serif SC', serif;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+
+/* header加上底色 */
+
+header {
+    background-image: linear-gradient(to top, #ffc107, #fce396);
+}
+
+/* 更改 Logo樣式 */
+
+header h1 {
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* 更改漢堡選單樣式 */
+
+.navbar-light .navbar-toggler {
+    background-image: linear-gradient(to top, rgba(104, 12, 2, 0.8), rgba(104, 12, 2, 0.5));
+    border: 1px solid rgb(99, 39, 4);
+}
+
+.navbar-toggler:hover {
+    background-image: linear-gradient(to bottom, rgba(104, 12, 2, 0.8), rgba(104, 12, 2, 0.5));
+}
+
+/* 更改導覽列底色 */
+
+nav {
+    background-image: linear-gradient(to top, #ffc107, #fce396);
+    text-align: center;
+}
+
+/* 更改選單在導覽列中置中對齊 */
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+/* 更改導覽列中超連結的樣式 */
+
+.navbar-nav .nav-link {
+    /* display: block; */
+    color: rgb(0, 0, 0) !important;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgb(152, 35, 0);
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(255, 255, 255) !important;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 讓超連結停留在頁面時,出現反白提示 */
+
+.navbar-nav .active {
+    background-color: rgb(80, 80, 80);
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(255, 255, 255) !important;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 讓每個導覽列清單距離右邊15像素 */
+
+.navbar-nav li {
+    margin-right: 15px;
+}
+
+/* 更改下拉式選單背景色,並讓文字居中 */
+
+.navbar .dropdown-menu {
+    text-align: center;
+    background-color: #FFE388;
+}
+
+/* 更改下拉式文字顏色,並讓區塊距離左右５像素 */
+
+.navbar .dropdown-item {
+    color: #FF00FF;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* 更改下拉式文字滑過的背景色 */
+
+.navbar .dropdown-item:hover {
+    background-color: #E5D200;
+}
+
+/* 更改輪播動畫箭頭大小 */
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* 更改輪播動畫箭頭樣式 */
+
+.carousel-control-prev-icon {
+    background-image: url("../images/Prev.svg");
+}
+
+.carousel-control-next-icon {
+    background-image: url("../images/Next.svg");
+}
+
+/* 改變輪播動畫中,描述文字給予漸層色 */
+
+.carousel-caption {
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 38, 46, 0.75) 30%, rgba(0, 0, 0, 0.75) 70%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 38, 46, 0.75) 30%, rgba(0, 0, 0, 0.75) 70%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 38, 46, 0.75) 30%, rgba(0, 0, 0, 0.75) 70%, rgba(0, 0, 0, 0) 100%);
+    /* 舊版IE */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+}
+
+
+
+/* section 標題二樣式 */
+
+.sectionh2 {
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+/*  新增兩個section,一樣鎖住背景  讓section之間出現類似動畫效果 */
+.sectionbg1, .sectionbg2, .sectionbg3{
+    padding: 150px 15px;
+    background-color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    /* 調整背景圖大小 圖片隨畫面縮放 放大會失真 */
+    background-position: center center;
+    /* 調整背景圖顯示位置 水平和垂直居中 */
+    background-repeat: no-repeat;
+}
+
+/* 新增兩個section 改變背景圖 */
+
+.sectionbg1 {
+    background-image: url(../images/sectionBG1.jpg);
+}
+
+.sectionbg2 {
+    background-image: url(../images/sectionBG2.jpg);
+}
+.sectionbg3{
+    background-image: url(../images/sectionBG3.jpg);
+    opacity: 0.8;
+}
+/* 改變section中標題三字型大小 和背景顏色 */
+
+.sectionh3 {
+    font-size: 3rem;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 38, 46, 0.75) 30%, rgba(0, 0, 0, 0.75) 70%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 38, 46, 0.75) 30%, rgba(0, 0, 0, 0.75) 70%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 38, 46, 0.75) 30%, rgba(0, 0, 0, 0.75) 70%, rgba(0, 0, 0, 0) 100%);
+    /* 舊版IE */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+}
+/*section 付款方式 priceMethod 標題三和段落樣式*/
+#priceMethod p{
+    line-height: 50px;
+    font-size: 1.5rem;
+}
+#priceMethod h3{
+    font-size: 2rem;
+}
+/* 自訂表單樣式 */
+#formstyle input[type="text"] ,input[type="tel"] ,input[type="email"]{
+    padding: 20px;
+    background-color: #fce396;
+    box-sizing: border-box;
+}
+#formstyle textarea{
+    font-size: 1.3rem;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+/* 頁尾樣式 */
+.footerlink a:link{
+    display: block;
+    padding: 10px;
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+}
+.footerlink a:hover{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgba(255, 2, 2, 0.5);
+    color: rgb(255, 255, 255);
+}
+.social-link > li > a{
+    /* background-color: #ffffff; */
+    font-size: 2rem;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 0;
+    padding-top: 0.5rem;
+    text-align: center;
+    border-radius: 50%;
+    color:rgb(206, 23, 223);
+    margin: 0 0.2rem;
+}
+.social-link > li > a:hover{
+    /* background-color: #ffffff; */
+    font-size: 2rem;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 0;
+    padding-top: 0.5rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color:rgb(206, 23, 223);
+    margin: 0 0.2rem;
+}
+/* footer {
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+footer .Myposition {
+    position: relative;
+}
+
+footer img {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 10px;
+    z-index: 30;
+} */
